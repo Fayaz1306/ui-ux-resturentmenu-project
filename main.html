@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="RestaurantMenu.css">
+</head>
+<body>
+    <div class="restaurant-menu">
+        <div class="menu-view">
+            <h1>Order Please</h1>
+            <input type="text" placeholder="Search" class="search-bar" id="search-bar">
+            <div class="categories">
+                <button class="category-btn" data-category="All">All</button>
+                <button class="category-btn" data-category="Breakfast">Breakfast</button>
+                <button class="category-btn" data-category="Lunch">Lunch</button>
+                <button class="category-btn" data-category="Treats">Treats</button>
+                <button class="category-btn" data-category="Dessert">Dessert</button>
+                <button class="category-btn" data-category="Dinner">Dinner</button>
+            </div>
+            <div class="menu-items">
+                <!-- Indian food items -->
+                <div class="menu-item" data-category="Breakfast">
+                    <img src="https://img.freepik.com/free-photo/delicious-3d-pancakes-still-life_23-2151105041.jpg?t=st=1724043760~exp=1724047360~hmac=48510c297abe595c36c4d92bf0027358557fb8b57c42c1c3a52d1abda9f89557&w=360" alt="Pancakes">
+                    <h3>Pancakes</h3>
+                    <p>15 min • 4.8</p>
+                    <p>₹250.00</p>
+                </div>
+                <div class="menu-item" data-category="Lunch">
+                    <img src="https://img.freepik.com/premium-photo/bowl-rice-with-chicken-rice_1028566-43232.jpg?w=740" alt="Biryani">
+                    <h3>Biryani</h3>
+                    <p>45 min • 4.9</p>
+                    <p>₹350.00</p>
+                </div>
+                <div class="menu-item" data-category="Lunch">
+                    <img src="https://img.freepik.com/premium-photo/photography-tasty-indian-chole-bhature_1288657-44754.jpg?w=740" alt="Chole Bhature">
+                    <h3>Chole Bhature</h3>
+                    <p>30 min • 4.7</p>
+                    <p>₹200.00</p>
+                </div>
+                <div class="menu-item" data-category="Dinner">
+                    <img src="https://img.freepik.com/free-photo/curry-with-chicken-onions-indian-food-asian-cuisine_2829-4415.jpg?t=st=1724044324~exp=1724047924~hmac=78efb6c87fbc48b86ff7123c07a91d7d47becae4b3bace476a952fcea6b12137&w=900" alt="Butter Chicken">
+                    <h3>Butter Chicken</h3>
+                    <p>40 min • 4.9</p>
+                    <p>₹400.00</p>
+                </div>
+                <div class="menu-item" data-category="Dessert">
+                    <img src="https://img.freepik.com/premium-photo/sweet-bliss-gulab-jamun-indian-desert_756631-2873.jpg?w=740" alt="Gulab Jamun">
+                    <h3>Gulab Jamun</h3>
+                    <p>20 min • 4.8</p>
+                    <p>₹120.00</p>
+                </div>
+                <div class="menu-item" data-category="Lunch">
+                    <img src="https://img.freepik.com/free-photo/flat-lay-pakistani-food-arrangement_23-2148825110.jpg?t=st=1724044479~exp=1724048079~hmac=80843e49bf45dd5c7b7bcbce09a0019b957fb7955b71868519fbf5428417b076&w=900" alt="Palak Paneer">
+                    <h3>Palak Paneer</h3>
+                    <p>30 min • 4.6</p>
+                    <p>₹250.00</p>
+                </div>
+                <div class="menu-item" data-category="Dinner">
+                    <img src="https://img.freepik.com/free-photo/aloo-paratha-gobi-paratha-also-known-as-potato-cauliflower-stuffed-flatbread-dish-originating-from-indian-subcontinent_466689-76172.jpg?t=st=1724044561~exp=1724048161~hmac=09af9d2c2e1d2e0abe7dde0cb878028a470453e0641610e45952abd92cb5e185&w=900" alt="Naan">
+                    <h3>Naan</h3>
+                    <p>15 min • 4.7</p>
+                    <p>₹50.00</p>
+                </div>
+                <div class="menu-item" data-category="Breakfast">
+                    <img src="https://img.freepik.com/premium-photo/south-indian-breakfast-recipe-idly-idli-rice-cake-served-with-coconut-chutney-sambar-selective-focus_466689-48185.jpg?w=900" alt="Idli Sambar">
+                    <h3>Idli Sambar</h3>
+                    <p>20 min • 4.8</p>
+                    <p>₹100.00</p>
+                </div>
+                <div class="menu-item" data-category="Treats">
+                    <img src="https://img.freepik.com/premium-photo/samosas-indian-dish-isolated-white-background_906385-28992.jpg?w=740" alt="Samosa">
+                    <h3>Samosa</h3>
+                    <p>15 min • 4.7</p>
+                    <p>₹30.00</p>
+                </div>
+                <div class="menu-item" data-category="Dessert">
+                    <img src="https://img.freepik.com/premium-photo/jalebi-dessert-served-white-plate_466689-1527.jpg?w=900" alt="Jalebi">
+                    <h3>Jalebi</h3>
+                    <p>25 min • 4.9</p>
+                    <p>₹150.00</p>
+                </div>
+                <div class="menu-item" data-category="Lunch">
+                    <img src="https://img.freepik.com/free-photo/traditional-indian-soup-lentils-indian-dhal-spicy-curry-bowl-spices-herbs-rustic-black-wooden-table_2829-18717.jpg?t=st=1724044916~exp=1724048516~hmac=66a731a1662e4f8ec41c97c9130e7c9c596fd0f877314f8194893e1d110ec0fd&w=900" alt="Dal Makhani">
+                    <h3>Dal Makhani</h3>
+                    <p>35 min • 4.8</p>
+                    <p>₹280.00</p>
+                </div>
+                <div class="menu-item" data-category="Dinner">
+                    <img src="https://img.freepik.com/premium-photo/plate-chicken-with-side-dip-cup-dip_1142389-19227.jpg?w=740" alt="Tandoori Chicken">
+                    <h3>Tandoori Chicken</h3>
+                    <p>40 min • 4.9</p>
+                    <p>₹450.00</p>
+                </div>
+                <div class="menu-item" data-category="Breakfast">
+                    <img src="https://img.freepik.com/premium-photo/maharashtrn-kakdi-thalipeeth-punjabi-cucumber-paratha-made-from-fresh-grated-kheera-breakfast-serve-it-along-with-yogurt_466689-4307.jpg?w=360" alt="Paratha">
+                    <h3>Paratha</h3>
+                    <p>20 min • 4.7</p>
+                    <p>₹120.00</p>
+                </div>
+                <div class="menu-item" data-category="Treats">
+                    <img src="https://img.freepik.com/premium-photo/indian-special-traditional-matar-green-peas-kachori-served-with-tomato-sauce-hot-tea_466689-63407.jpg?w=900" alt="Kachori">
+                    <h3>Kachori</h3>
+                    <p>15 min • 4.8</p>
+                    <p>₹40.00</p>
+                </div>
+                <div class="menu-item" data-category="Dessert">
+                    <img src="https://img.freepik.com/premium-photo/indian-rasgulla-rosogulla-dessert-sweet-served-bowl-selective-focus_466689-28586.jpg?w=900" alt="Rasgulla">
+                    <h3>Rasgulla</h3>
+                    <p>20 min • 4.9</p>
+                    <p>₹100.00</p>
+                </div>
+                <div class="menu-item" data-category="Lunch">
+                    <img src="https://img.freepik.com/free-photo/delicious-thai-food-still-life_23-2149508958.jpg?t=st=1724045865~exp=1724049465~hmac=7f4c42bfee1884f955a5bfc93aef420af75580488de7b22de2778b93213be87b&w=900" alt="Veg Korma">
+                    <h3>Veg Korma</h3>
+                    <p>30 min • 4.8</p>
+                    <p>₹270.00</p>
+                </div>
+                <div class="menu-item" data-category="Dinner">
+                    <img src="https://img.freepik.com/premium-photo/bowl-soup-with-red-pepper-green-peppers_787273-51564.jpg?w=740" alt="Rogan Josh">
+                    <h3>Rogan Josh</h3>
+                    <p>50 min • 4.7</p>
+                    <p>₹400.00</p>
+                </div>
+                <div class="menu-item" data-category="Breakfast">
+                    <img src="https://img.freepik.com/premium-photo/sweet-corn-upma-makai-rava-uppittu-made-using-with-without-semolina-healthy-indian-breakfast_466689-85033.jpg?w=900" alt="Upma">
+                    <h3>Upma</h3>
+                    <p>15 min • 4.6</p>
+                    <p>₹80.00</p>
+                </div>
+                <div class="menu-item" data-category="Lunch">
+                    <img src="https://img.freepik.com/free-photo/bottom-view-roasted-eggplant-salad-bowl-garlic-different-spices-small-bowls-dark-table_140725-130872.jpg?t=st=1724046032~exp=1724049632~hmac=ccc30365505fd824d0dd8ebfa9bb39927cc21e04b59bea95fd1bb13b199c4b74&w=900" alt="Rajma">
+                    <h3>Rajma</h3>
+                    <p>30 min • 4.8</p>
+                    <p>₹220.00</p>
+                </div>
+                <div class="menu-item" data-category="Dinner">
+                    <img src="https://img.freepik.com/premium-photo/chicken-tikka-masala-traditional-indian-british-dish-chicken-with-curry-turmeric-indian-dinner-concept-asian-indian-food_103326-259.jpg?w=900" alt="Chicken Curry">
+                    <h3>Chicken Curry</h3>
+                    <p>40 min • 4.9</p>
+                    <p>₹370.00</p>
+                </div>
+                <div class="menu-item" data-category="Treats">
+                    <img src="https://img.freepik.com/premium-photo/crispy-corn-tikki-pakora-pakoda-pattice-also-known-as-cutlet-served-with-green-chutney-selective-focus_466689-29772.jpg?w=360" alt="Pakora">
+                    <h3>Pakora</h3>
+                    <p>20 min • 4.7</p>
+                    <p>₹60.00</p>
+                </div>
+                <div class="menu-item" data-category="Dessert">
+                    <img src="https://img.freepik.com/premium-photo/daliya-kheer-dalia-payasam-a-a-a-a-a-a-broken-cracked-wheat-milk-porridge-with-sugar-cooked-indian-way-dalia-is-popular-breakfast-cereal-north-india_466689-49885.jpg?w=900" alt="Kheer">
+                    <h3>Kheer</h3>
+                    <p>25 min • 4.9</p>
+                    <p>₹130.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="item-details">
+            <button class="back-btn">&#8592; Back to Menu</button>
+            <img src="" alt="Item Image" class="large-image">
+            <h2 id="item-name">Item Name</h2>
+            <p id="item-price">₹0.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <script src="RestaurantMenu.js"></script>
+</html>
+</body>
